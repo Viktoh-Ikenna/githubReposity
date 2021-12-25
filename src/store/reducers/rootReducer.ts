@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import UI from './UI';
+import repositories from './repositories';
 
 export default combineReducers({
-    UI,
+    repositories,
 });

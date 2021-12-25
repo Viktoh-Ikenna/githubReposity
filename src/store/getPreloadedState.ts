@@ -1,6 +1,6 @@
 import { PartialRootState } from './configureStore';
 
-import { initialUIState, UIState } from '../store/reducers/UI';
+import { initialUIState, UIState } from './reducers/repositories';
 
 const getPreloadedUIState = (): UIState => {
     return {
@@ -10,7 +10,7 @@ const getPreloadedUIState = (): UIState => {
 
 const getPreloadedState = (): PartialRootState => {
     return {
-        UI: getPreloadedUIState(),
+        repositories: getPreloadedUIState(),
     };
 };
 

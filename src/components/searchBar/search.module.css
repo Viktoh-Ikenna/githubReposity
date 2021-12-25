@@ -1,0 +1,22 @@
+.searchWrapper {
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+}
+.searchBar {
+    display: table-cell;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: inherit;
+    color: inherit;
+    background: black;
+    border: 0;
+    box-shadow: none;
+    outline: 0;
+    border-radius: 5px;
+    padding: 7px 5px;
+    box-shadow: 0px 0px 2px white;
+    min-width: 300px;
+}

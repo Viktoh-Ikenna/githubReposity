@@ -1,0 +1,127 @@
+.container{
+    width:100%;
+    border-top:0.1px solid #484f58;
+    border-bottom:0.1px solid #484f58;
+    color:#8b949e;
+    padding: 24px 0;
+    display:flex ;
+    justify-content: flex-start;
+    align-items: center;
+}
+.desContainer{
+    flex: 1;
+}
+.name{
+    color:#58a6ff;
+    font-size: 22px;
+    font-weight: 700;
+}
+.existence{
+    display: inline-block;
+    padding: 0 7px;
+    padding-top: 1px !important;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    border: 1px solid transparent;
+    border-radius: 2em;
+    border-color: #484f58;
+    margin: 0px 5px;
+}
+.nameHolder{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex;
+}
+.descriptionHolder{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex;  
+    font-size: 12px;
+    margin:15px 0
+}
+.descriptionHolder >div{
+    margin-right: 5px;
+
+}
+.round{
+    width:12px;
+    height: 12px;
+    background-color: orange;
+    border-radius: 50%;
+    margin-right: 4px;
+
+}
+.language{
+    display: flex;
+    justify-content:center;
+    align-items: flex;  
+    font-size: 12px;
+}
+.icons{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 2px;
+    font-size: 15px;
+}
+.others{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.starBtnContainer{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.starBtnMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    border: 1px solid #8b949e;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #21262d;
+}
+.starDF{
+    border-radius: 6px 0px 0px 6px;
+    
+}
+.arrowF{
+    border-radius: 0px 6px 6px 0px;
+    padding-top: 5px !important;
+
+}
+.othContainer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+    flex-direction: column;
+}
+.lineContainer{
+    padding: 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+.line{
+    width:100px;
+    height: 1px;
+    background-color: #0e4429;
+}

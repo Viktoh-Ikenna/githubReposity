@@ -1,5 +1,3 @@
-import './styles/index.css';
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider as ReduxProvider } from 'react-redux';
@@ -10,7 +8,7 @@ import AppContextProvider from './contexts/AppContextProvider';
 
 import { setDefaultOptions } from 'esri-loader';
 
-import { DemoPage, RootPage } from './pages';
+import { RootPage } from './pages';
 
 setDefaultOptions({
     url: 'https://js.arcgis.com/next/',
@@ -23,7 +21,7 @@ setDefaultOptions({
         <React.StrictMode>
             <ReduxProvider store={configureAppStore(preloadedState)}>
                 <AppContextProvider>
-                    <DemoPage />
+                    <RootPage />
                 </AppContextProvider>
             </ReduxProvider>
         </React.StrictMode>,

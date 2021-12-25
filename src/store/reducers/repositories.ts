@@ -8,30 +8,30 @@ import {
 import { RootState, StoreDispatch, StoreGetState } from '../configureStore';
 
 export type UIState = {
-    fullscreenMap?: boolean;
+    repos?: any;
 };
 
 export const initialUIState: UIState = {
-    fullscreenMap: false,
+    repos: [],
 };
 
 const slice = createSlice({
-    name: 'UI',
+    name: 'reposLists',
     initialState: initialUIState,
     reducers: {
-        isFullscreenMapToggled: (state) => {
-            state.fullscreenMap = !state.fullscreenMap;
+        repositories: (state, action) => {
+            state.repos = [...action.payload];
         },
     },
 });
 
 const { reducer } = slice;
 
-export const { isFullscreenMapToggled } = slice.actions;
+export const { repositories } = slice.actions;
 
-export const fullscreenMapSelector = createSelector(
-    (state: RootState) => state.UI.fullscreenMap,
-    (fullscreenMap) => fullscreenMap
+export const ResposiorySelector = createSelector(
+    (state: RootState) => state.repositories.repos,
+    (repos) => repos
 );
 
 export default reducer;
